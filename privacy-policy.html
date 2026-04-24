@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransLayer Sniper – Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
+    h1 { font-size: 28px; border-bottom: 2px solid #e5e5e5; padding-bottom: 12px; }
+    h2 { font-size: 20px; margin-top: 36px; color: #222; }
+    p, li { font-size: 15px; color: #333; }
+    ul { padding-left: 20px; }
+    .lang-divider { border: none; border-top: 3px solid #e5e5e5; margin: 48px 0; }
+    .updated { font-size: 13px; color: #888; margin-top: -8px; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+
+<!-- ===== ENGLISH ===== -->
+<h1>Privacy Policy – TransLayer Sniper</h1>
+<p class="updated">Last updated: April 2026</p>
+
+<h2>1. Overview</h2>
+<p>TransLayer Sniper ("the Extension") is a Chrome browser extension that helps users translate official documents using AI. This policy explains what data is collected, how it is used, and your rights.</p>
+
+<h2>2. Data We Collect</h2>
+<ul>
+  <li><strong>API Keys</strong> – Your Google Gemini API key and (optionally) Anthropic Claude API key, entered by you. Stored locally in your browser using <code>chrome.storage.local</code>. Never transmitted to our servers.</li>
+  <li><strong>Document content for translation</strong> – Screenshots (image data) or selected text from the webpage you are viewing are sent directly from your browser to Google Gemini API or Anthropic Claude API for translation processing. We do not receive or store this content.</li>
+  <li><strong>Translation history (Ledger)</strong> – Saved locally in your browser only. Never uploaded to any server unless you explicitly configure Supabase integration.</li>
+  <li><strong>Translation memory</strong> – Custom terminology pairs you create, stored locally in <code>chrome.storage.local</code>.</li>
+  <li><strong>Supabase integration (optional)</strong> – If you choose to enable Supabase, translation terms may be synced to your own Supabase project using credentials you provide. The Extension developer has no access to your Supabase data.</li>
+</ul>
+
+<h2>3. Data We Do NOT Collect</h2>
+<ul>
+  <li>We do not collect personal information (name, email, location).</li>
+  <li>We do not track browsing history or page visits.</li>
+  <li>We do not share any data with third parties beyond the AI APIs (Google Gemini, Anthropic Claude) which you have configured.</li>
+  <li>We do not run any analytics or tracking scripts.</li>
+</ul>
+
+<h2>4. Third-Party Services</h2>
+<p>The Extension communicates with the following external services, solely to perform translation:</p>
+<ul>
+  <li><strong>Google Gemini API</strong> – <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+  <li><strong>Anthropic Claude API</strong> (optional, for scoring) – <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Privacy Policy</a></li>
+  <li><strong>Supabase</strong> (optional, user-configured) – <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></li>
+</ul>
+<p>Document content sent to these APIs is subject to each provider's own privacy policy. We recommend reviewing them before use.</p>
+
+<h2>5. Why <code>&lt;all_urls&gt;</code> Permission Is Required</h2>
+<p>TransLayer Sniper's core function is to allow users to select and translate any text or image on any webpage — including PDF viewers, government portals, and visa application sites. The <code>&lt;all_urls&gt;</code> host permission is required solely to inject the translation UI overlay and capture selected content on any site the user chooses to translate. The Extension does not access, read, or transmit page content unless the user explicitly activates Sniper Mode.</p>
+
+<h2>6. Data Security</h2>
+<p>All API keys and translation data are stored exclusively in <code>chrome.storage.local</code> on your device. The Extension has no backend server and cannot access your data remotely.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>This Extension is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this policy. Continued use of the Extension after changes constitutes acceptance of the updated policy.</p>
+
+<h2>9. Contact</h2>
+<p>For questions about this privacy policy, please contact us via the Chrome Web Store support page for TransLayer Sniper.</p>
+
+<hr class="lang-divider">
+
+<!-- ===== 日本語 ===== -->
+<h1>プライバシーポリシー – TransLayer Sniper</h1>
+<p class="updated">最終更新：2026年4月</p>
+
+<h2>1. 概要</h2>
+<p>TransLayer Sniper（以下「本拡張機能」）は、AIを利用して公文書の翻訳を支援するChrome拡張機能です。本ポリシーでは、収集するデータ、その利用方法、およびユーザーの権利について説明します。</p>
+
+<h2>2. 収集するデータ</h2>
+<ul>
+  <li><strong>APIキー</strong> – ユーザーが入力したGoogle Gemini APIキー、およびオプションのAnthropic Claude APIキーは、ブラウザの <code>chrome.storage.local</code> にローカル保存されます。開発者のサーバーへは一切送信されません。</li>
+  <li><strong>翻訳対象のドキュメント内容</strong> – スナイパーモードで選択した画像データやテキストは、翻訳処理のためにGoogle Gemini APIまたはAnthropic Claude APIへ直接送信されます。開発者はこのデータを受信・保存しません。</li>
+  <li><strong>翻訳履歴（台帳）</strong> – ブラウザのローカルストレージにのみ保存されます。Supabase連携を有効にしない限り、外部へ送信されません。</li>
+  <li><strong>翻訳メモリ</strong> – ユーザーが作成した用語ペアは <code>chrome.storage.local</code> にローカル保存されます。</li>
+  <li><strong>Supabase連携（任意）</strong> – ユーザーが設定した場合のみ、翻訳用語がユーザー自身のSupabaseプロジェクトに同期されます。開発者はSupabaseのデータにアクセスできません。</li>
+</ul>
+
+<h2>3. 収集しないデータ</h2>
+<ul>
+  <li>氏名・メールアドレス・位置情報等の個人情報は収集しません。</li>
+  <li>閲覧履歴やページアクセス情報は追跡しません。</li>
+  <li>設定済みのAI API（Google Gemini、Anthropic Claude）以外の第三者へデータを共有しません。</li>
+  <li>アナリティクスやトラッキングスクリプトは使用していません。</li>
+</ul>
+
+<h2>4. 利用する外部サービス</h2>
+<p>本拡張機能は翻訳処理のためにのみ、以下の外部サービスと通信します：</p>
+<ul>
+  <li><strong>Google Gemini API</strong> – <a href="https://policies.google.com/privacy" target="_blank">Googleプライバシーポリシー</a></li>
+  <li><strong>Anthropic Claude API</strong>（任意・採点機能用）– <a href="https://www.anthropic.com/privacy" target="_blank">Anthropicプライバシーポリシー</a></li>
+  <li><strong>Supabase</strong>（任意・ユーザー設定）– <a href="https://supabase.com/privacy" target="_blank">Supabaseプライバシーポリシー</a></li>
+</ul>
+
+<h2>5. <code>&lt;all_urls&gt;</code> 権限が必要な理由</h2>
+<p>本拡張機能の中核機能は、政府ポータル・ビザ申請サイト・PDFビューアを含むあらゆるウェブページ上で、ユーザーがテキストや画像を選択して翻訳できるようにすることです。<code>&lt;all_urls&gt;</code> のホスト権限は、翻訳UIオーバーレイの表示と選択コンテンツの取得のためにのみ使用されます。ユーザーがスナイパーモードを明示的に起動しない限り、ページの内容へのアクセス・読み取り・送信は一切行いません。</p>
+
+<h2>6. データのセキュリティ</h2>
+<p>すべてのAPIキーおよび翻訳データは、ユーザーのデバイス上の <code>chrome.storage.local</code> にのみ保存されます。本拡張機能にはバックエンドサーバーがなく、開発者がユーザーのデータにリモートアクセスすることはできません。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>本プライバシーポリシーに関するご質問は、Chrome Web StoreのTransLayer Sniperサポートページよりご連絡ください。</p>
+
+</body>
+</html>
